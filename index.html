@@ -2,32 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GadGetStore | Ecommerce Website Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Store | Ecommerce Website Design</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
+
+    <div class="header">
+
     <div class="container">
         <div class="navbar">
         <div class="logo">
-            <img src="images/s1.png" width="150px">
+            <a href="index.html"><img src="images/g.png" width="150px"></a>
         
         </div>
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href="">Account</a></li>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="footer.html">Contacts</a></li>
+                <li><a href="account.html">Account</a></li>
             </ul>
         
         </nav>
+        <a href="cart.html"><img src="images/icon1.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
     </div>
     <div class="row">
         <div class="col-2">
             <h1>Explore the <br>Universe of Innovation!</h1>
             <p> Step into the world of innovation at SmartStore, where gadgets reign supreme. Explore our curated collection and unlock the potential of cutting-edge technology.<br> Your journey to gadget glory starts here at Gadget Galaxy!</p>
-            <a href=""class="btn">Explore Now &#8594;</a>
+            <a href="products.html"class="btn">Explore Now &#8594;</a>
         
         </div>
         <div class="col-2">
@@ -35,10 +45,309 @@
         </div>
     </div>
     </div>
+</div>
+
+<!------ featured categories ------>
+
+    <div class="categories">
+        <div class="small-contianer">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/mac.png">
+                </div>
+                <div class="col-3">
+                    <img src="images/ear(mac).jpeg">
+                </div>
+                <div class="col-3">
+                    <img src="images/iphone.jpeg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!------ featured products ------> 
+<div class="small-contianer">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/watch.webp">
+            <h4>Smart watch</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-full"style="color:orange"></span>
+            </div>
+            <p>75$</p>
+        </div>
+
+
+
+
+        <div class="col-4">
+            <img src="images/camera.jpeg">
+            <h4>Camera</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-full"style="color:orange"></span>
+            </div>
+            <p>115$</p>
+        </div>
+
+
+
+
+
+        <div class="col-4">
+            <img src="images/airpods.jpeg">
+            <h4>Airpods</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+            </div>
+            <p>120$</p>
+        </div>
+
+
+
+        <div class="col-4">
+            <a href="product-details.html"><img src="images/speaker.jpeg"></a>
+            <h4>Clever speaker</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p>200$</p>
+        </div>
+    </div>
+    <h2 class="title">LATEST PRODUCTS!</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/lat(charger).jpeg">
+            <h4>3 in 1 Fast Wireless Charger</h4>
+            <p>50$</p>
+        </div>
+        
+        <div class="col-4">
+            <img src="images/lat(joy).webp">
+            <h4>Xbox Controller</h4>
+            <p>90$</p>
+        </div>
+        
+        <div class="col-4">
+            <img src="images/AirPods Case.jpg">
+            <h4>Black Airpod's case</h4>
+            <p>25$</p>
+        </div>
+
+
+
+        <div class="col-4">
+            <img src="images/lat(key).jpeg">
+            <h4>Lightening Keyboard</h4>
+            <p>60$</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="images/lat(mic).webp">
+            <h4>Streamer Microphone</h4>
+            <p>120$</p>
+        </div>
+        
+        <div class="col-4">
+            <img src="images/lat(print).jpeg">
+            <h4>Portable Printer</h4>
+            <p>130$</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/lat(watch).png">
+            <h4>Smart watch</h4>
+            <p>50$</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/lat(speaker).jpeg">
+            <h4>Bluetooth Shower Speaker</h4>
+            <p>65$</p>
+        </div>
+    </div>
     
-    
-    
-    
-    
+</div>
+<!------ offer ------>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <a href="buynow.html"><img src="images/alice1.webp" class="offer-img"></a>
+            </div>
+            <div class="col-2">
+                <p> Exclusive Available on GadGetStore</p>
+                <h1>Yandex.Station Alice</h1>
+                <small>Introducing Speaker Alice: crystal-clear sound, powerful bass, sleek design. Whether at home, on-the-go, or at a party, experience unparalleled audio. Elevate your music with Speaker Alice, your ultimate companion.</small>
+                <a href="buynow.html" class="btn">BUY NOW &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------- testimonial ------->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+
+                <p>&#10003;
+                    As a beginner photographer, I was looking for something user-friendly yet capable of delivering great results.This camera ticks all the boxes, and I'm thrilled with the photos I've taken so far.     
+                </p>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <img src="images/camera(ad).jpg">
+                <h3>Jeon Jungkook</h3>
+            </div>
+
+            <div class="col-3">
+
+                <p>&#10003;
+                    The iPhone's camera capabilities are simply remarkable, effortlessly capturing stunning photos and videos with incredible clarity , regardless of lighting conditions.Best!</p>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <img src="images/iphone(ad).jpg">
+                <h3>Kim Jennie</h3>
+            </div>
+
+            <div class="col-3">
+
+                <p>&#10003;
+                    The microphone's plug-and-play functionality makes it incredibly easy to set up and use. I didn't have to spend hours tinkering with settings—I was up and running in no time.</p>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <img src="images/ mic(ad).jpg">
+                <h3>Roseanne Park</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!------ brands ------>
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+
+            <div class="col-5">
+                <img src="images/square.webp">
+            </div>
+
+            <div class="col-5">
+                <img src="images/fly.png">
+            </div>
+
+            <div class="col-5">
+                <img src="images/tinkoff.webp">
+            </div>
+
+            <div class="col-5">
+                <img src="images/yandex.png">
+            </div>
+
+            <div class="col-5">
+                <img src="images/cisco.png">
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<!------ footer------>
+<div class="footer">
+    <div class="conatiner">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phones.</p>
+                <div class="app-logo">
+                    <img src="images/googleplay.png">
+                    <img src="images/appstore.png">
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="images/g1.png" width="150px">
+                <p>Our Purpose: Connecting You to Tomorrow's Tech Today.</p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <hr>
+        <p class="copyright">Copyright 2023 - Gadgets Store</p>
+    </div>
+</div>
+<!--------js for toggle menu-------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
 </body>
 </html>
